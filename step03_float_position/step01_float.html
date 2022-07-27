@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step01_float.html</title>
+    <style>
+
+        article .picture {
+            width: 100px;
+            height: 100px;
+            background: navy;
+            float: left;
+            margin: 10px;
+        }
+        /* 적용 */
+        .box {
+            width: 100px;
+            height: 100px;
+            background: gold;
+            margin: 10px;
+            float: left;
+        }
+
+        ul {
+            padding: 15px 20px;
+            background: red;
+            /* float: left; */
+            /* overflow: hidden; */
+            /* display: inline-block; */
+            display: flow-root;
+        }
+
+        /* 부모요소에 가상 요소 after 부여 한 뒤에 clear:both; */
+        ul::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        ul li {
+            float: left;
+            list-style: none;
+            background: gold;
+            padding: 5px 10px;
+            margin: 5px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <!-- float : 요소를 좌우 방향으로 띄움 ( 수평 정렬 )-->
+
+    <article>
+        <!--
+        <div class="picture"></div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique mollitia tempora nulla asperiores commodi soluta maxime, animi eius a repellat laudantium repellendus hic accusantium iusto voluptatum repudiandae incidunt pariatur quis.
+        Perspiciatis, doloribus. Corrupti reprehenderit numquam, maiores nostrum aliquid placeat nihil repudiandae aperiam animi et unde dolore similique possimus dolores qui quae sequi quisquam dolor voluptatem velit exercitationem quidem fuga voluptas.
+        Commodi reprehenderit quam, explicabo neque iste aspernatur dolorem, maiores quo veniam labore praesentium quos, assumenda dolore dolores illum alias voluptate ipsam magni facere. Laudantium, porro odit suscipit illum voluptatum corrupti.
+        -->
+
+    </article>
+    <!-- div.box($)*4 -->
+    <!--
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    -->
+
+    <!-- 문제( 띄움 속성이기 때문에 빈 공간 발생시, 원치 않는 위치 조정이 일어남 ) 해결 -->
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+    </ul>
+
+    
+</body>
+</html>
