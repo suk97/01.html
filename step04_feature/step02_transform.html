@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step02_transform.html</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+
+            /* box 글자가 중앙으로 정렬 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* transform: rotate(90deg); */
+            /* transform: translateX(100px); */
+
+            transition: 1s;
+        }
+
+        .box:hover {
+            /* position: relative;
+            left: 30px;
+            top: 30px; */
+
+            transform: translate(30px, 30px);
+            /* transform: scale(1.5); */
+            /* transform: skew(45deg, 45deg); */
+
+        }
+
+        /* 3D */
+        img {
+            width: 300px;
+            border: 5px solid blue;
+            transform: perspective(500px) rotateX(45deg);
+        }
+
+        
+        .change {
+            width: 400px;
+            height: 400px;
+            background: dodgerblue;
+            margin: 20px;
+            transition: 1.5s;
+
+        }
+
+        .change:hover {
+            transform: translateX(400px);
+            border-radius: 50%;
+            background: gold;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- transform : 요소의 변환 효과 지정 -->
+    <!-- transform : 변환함수1, 2, 3, ... -->
+    <!-- transform : 원근법 이동 크기 회전 기울임 -->
+
+    <!-- 2D 변환 함수 -->
+    <!-- 이동 : translate(x, y), translateX(x), translateY(y) 이동(x축, y축) 단위 -->
+    <!-- 크기 : scale(x, y), scaleX(x), scaleY(y) 크기(x축, y축), 없음(배수) -->
+    <!-- 회전 : rotate(degree) 회전(각도), deg -->
+    <!-- 기울임 : skew(x-deg, y-deg), 기울임(x축, y축), deg -->
+
+    <div class="box">box</div>
+
+
+    <!-- transform 3D 변환 함수 -->
+    <!-- 이동 : translate3d(x,y,z), translateZ(z) -->
+    <!-- 크기 : scale3d(x,y,z) scaleZ(z) -->
+    <!-- 회전 : rotate3d(x,y,z,a(각도)), rotateX(x), ratateY, roatateZ -->
+    <!-- 원근법 : perspective(n) 원근법(거리) 단위 -->
+    
+    <!-- <img src="/img/dog.PNG" alt="dog"> -->
+
+    <div class="change"></div>
+
+
+
+
+</body>
+</html>
