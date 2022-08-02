@@ -1,0 +1,50 @@
+@charset 'UTF-8';
+
+:root {
+    
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+
+}
+
+/* header */
+.header {
+    border: 1px solid red;
+    height: 100px;
+    margin-bottom: 0.5rem;
+}
+/* main */
+.main {
+    display: flex;
+    border: 1px solid red;
+    height: 500px;
+}
+
+/* nav */
+.nav {
+    border: 1px solid red;
+    width: 150px;
+    margin-right: 1rem;
+    display: flex;
+}
+.main-nav li {
+    
+}
+
+/* contents */
+.contents {
+    border: 1px solid red;
+    width: 630px;
+}
+/* footer */
+
+
+
+
+

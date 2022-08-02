@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step05_form_input.html</title>
+</head>
+<body>
+    <!-- input : text, passwd -->
+    <form action="">
+        ID :<input type="text"> <br />
+        PW :<input type="password">
+    </form>
+
+    <hr />
+    <!-- input : radio - 단일값만 선택 가능-->
+    <form action="">
+        <input type="radio" name="sex" id="" value="M">남성<br />
+        <input type="radio" name="sex" id="" value="F">여성<br />
+    </form>
+
+    <hr />
+    <!-- input : check - 다중값을 선택 가능 -->
+    <form action="">
+        <input type="checkbox" name="fruits" id="" value="banana">바나나
+        <input type="checkbox" name="fruits" id="" value="strawberry">딸기
+        <input type="checkbox" name="fruits" id="" value="watermelon">수박
+        <input type="checkbox" name="fruits" id="" value="orange">오렌지
+    </form>
+
+
+    <hr>
+
+    <!-- select -->
+    <select name="car" id="">
+        <option value="etc" selected>뚜벅이</option>
+        <option value="sedan">sedan</option>
+        <option value="SUV">SUV</option>
+    </select>
+
+
+    <!-- input : submit -->
+    <form action="https://search.naver.com/search.naver?" method="GET" target="_blank">
+        N : <input type="text" name="query">
+        <input type="hidden" name="data" value="1">
+        <input type="submit" value="검색">
+    </form>
+
+    <hr />
+
+    <!-- multimedia -->
+    <video src="/multimedia/TeachableMachine.mp4" controls autoplay width="450px" type="video/mp4"></video>
+    
+    
+    <iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="300"
+    height="200"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+    </iframe>
+
+    <hr />
+    띄어쓰기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 테스트
+
+
+
+
+
+
+</body>
+</html>
